@@ -87,5 +87,9 @@ public class CycleController {
 	public String getEmail() {
 		return carrierEmail.emailId();
 	}*/
+	@DeleteMapping("/delete")
+	public String delete(@PathParam( "id")int id){
+		return cs.delete(id);
+	}
 
 }

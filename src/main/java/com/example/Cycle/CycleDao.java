@@ -55,4 +55,8 @@ public class CycleDao {
 		 return "updated";
 	}
 
+    public String delete(int id) {
+		cr.deleteById(id);
+		return "Deleted particular id Data";
+    }
 }

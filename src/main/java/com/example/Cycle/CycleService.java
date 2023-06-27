@@ -47,4 +47,8 @@ public class CycleService {
 		return cd.edit(cyc, id);
 	}
 
+    public String delete(int id) {
+
+		return cd.delete(id);
+	}
 }
